@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.1 (February 24, 2025)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % Left column with your name and title, change the width as needed
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short: use just one of the lines below
+	% If your name is very long: reduce the font size or make the current column wider (and reduce the others proportionately)
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Anton}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Sivkov}}}}} % Last name
+	
+	\vspace{6pt} % Vertical whitespace
+	
+	{\huge Lead Software Engineer} % Career or current job title
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.27\textwidth} % Center column with the first column of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome5.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Yerevan, Armenia}\\
+	\icon{At}{12}{\href{mailto:anton6722@gmail.com}{anton6722@gmail.com}}\\	
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.27\textwidth} % Right column with the first column of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome5.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Github}{12}{\href{https://github.com/protagonyist}{github.com/protagonyist}}\\
+	\icon{Github}{12}{\href{https://github.com/antosiv}{github.com/antosiv}}\\
+	\icon{Linkedin}{12}{\href{https://linkedin.com/in/anton-sivkov-79839023b}{Anton Sivkov}}\\
+\end{minipage}
+
+\vspace{0.5cm} % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % Left column with the introduction text, change the width as needed
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	I'm a software engineer with strong experience in developing and maintaining complex data analysis (batch processing) systems and runtime systems (WEB APIs), managing small team. I'm able to transform requirements into architecture solutions balanced between operational costs (overall stability) and delivery time. My major language is Python, have practiced TypeScript, golang, C++ and R.
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.5\textwidth} % Right column with the skills bar chart, change the width as needed
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\begin{barchart}{5.5} % The parameter to the barchart environment is the maximum width (in cm) of the longest bar
+		\baritem{Python}{100}
+		\baritem{TypeScript}{60}
+		\baritem{k8s}{80}
+		\baritem{REST API design}{80}
+		\baritem{ETL systems}{80}
+		\baritem{CI/CD}{80}
+		\baritem{Bioinformatics}{60}
+		\baritem{Engineering management}{60}
+	\end{barchart}
+\end{minipage}
+
+% Output a series of bubbles showing your proficiency with environments and/or tools
+%\begin{center}
+%	\bubbles{3/Docker, 3/Prefect, 2/k8s, 2/Airflow, 2/FastAPI, 2/GitLab, 2/AWS, 1/React} % Each bubble must be in the format of '<size>/<label>' and you can specify as many bubbles as will fit on the page
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{3/2018 -- 1/2020 \\ \footnotesize{part-time}}
+		{Junior Software Engineer}
+		{BostonGene Inc.}
+		{Worked on developing automated analytics pipeline of NGS data, built prototype  microservices with Flask and postgres (sqlalchemy) around that.\\ \texttt{Python}\slashsep\texttt{Flask}\slashsep\texttt{Airflow}\slashsep\texttt{Docker}}
+	\entry
+		{1/2020 -- 1/2022\\}
+		{Middle Software Engineer}
+		{Bostongene Inc.}
+		{Delivered complex features in direct communication with internal customer, migrated data analysis system from Airflow to Prefect, implemented CI/CD pipelines, created bioinformatics-related python packages. Migrated microservices from Flask to FastAPI.\\ \texttt{Prefect}\slashsep\texttt{CI/CD}\slashsep\texttt{FastAPI}\slashsep\texttt{Basic bioinformatics}}
+	\entry
+		{1/2022 -- 3/2024}
+		{Senior Software Engineer}
+		{Bostongene Inc.}
+		{Migrated entire system to k8s, made critical architecture decisions, increased overall stability of system, decresead number of incidents by 40\% and resources consumption by 30\%. Migrated codebase from BitBucket to GitLab. Refactored codebase, increasing overall maintainability and readability. Developed front-end components with TypeScript and React \\ \texttt{k8s}\slashsep\texttt{Architecture}\slashsep\texttt{Refactoring}\slashsep\texttt{Front-end}}
+	\entry
+		{3/2024 -- now}
+		{Lead Software Engineer}
+		{Bostongene Inc.}
+		{Lead a team of 4 (including myself), learned to delegate and plan work according to Agile principles, mentored Junior developer and walked they through promotion to Middle. Transformed customer requirements into solutions for further implementation by team. \\ \texttt{Agile}\slashsep\texttt{Mentoring}\slashsep\texttt{Engineering management}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2015 -- 2019}
+		{Bachelors's Degree}
+		{Moscow State University}
+		{Faculty of Computational Mathematics and Cybernetics}
+	\entry
+		{2019 -- 2021}
+		{Masters's Degree}
+		{Higher School of Economics (Moscow)}
+		{Faculty of Compluter Science, program "Data analysis in biology and medicine" (bioinformatics)}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth} % Left column width
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{Russian} - native\\
+	\textbf{English} - {\href{https://cert.efset.org/en/1W9jFp}{C1}}\\
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.3\textwidth} % Center column width
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Programming languages}
+	
+	\textbf{Python}, \textbf{TypeScript}, \textbf{Go}, \textbf{C++}, \textbf{R}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Learning goals}
+
+	\textbf{AI engineering}\\
+	\textbf{High-load systems}\\
+	\textbf{Front-end}\\
+	\textbf{Engineering management}\\
+\end{minipage}
+%----------------------------------------------------------------------------------------
+
+\end{document}
