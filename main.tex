@@ -63,33 +63,39 @@
 	\icon{Linkedin}{12}{\href{https://linkedin.com/in/anton-sivkov-79839023b}{Anton Sivkov}}\\
 \end{minipage}
 
-\vspace{0.5cm} % Vertical whitespace
+\vspace{0.3cm} % Vertical whitespace
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-\cvsect{Who Am I?}
-
 \begin{minipage}[t]{0.4\textwidth} % Left column with the introduction text, change the width as needed
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
+	\cvsect{Who Am I?}
+
 	I'm a software engineer with strong experience in developing and maintaining complex data analysis (batch processing) systems and runtime systems (WEB APIs), managing small team. I'm able to transform requirements into architecture solutions balanced between operational costs (overall stability) and delivery time. My major language is Python, have practiced TypeScript, golang, C++ and R.
 \end{minipage}
 \hfill % Automatic horizontal whitespace
 \begin{minipage}[t]{0.5\textwidth} % Right column with the skills bar chart, change the width as needed
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
-	\begin{barchart}{5.5} % The parameter to the barchart environment is the maximum width (in cm) of the longest bar
-		\baritem{Python}{100}
-		\baritem{TypeScript}{60}
-		\baritem{k8s}{80}
-		\baritem{REST API design}{80}
-		\baritem{ETL systems}{80}
-		\baritem{CI/CD}{80}
-		\baritem{Bioinformatics}{60}
-		\baritem{Engineering management}{60}
-	\end{barchart}
+	\cvsect{Achievments}
+	\begin{itemize}
+		\item{Developed and maintaning complex automated analytics pipeline joining medical knowledge bases and NGS data}
+		\item{Migrated several serivices to cloud (k8s)}
+		\item{Performed migration from Bitbucket and Concourse to GitLab and GitLab CI/CD for entire team codebase}
+		\item{Reimplemented huge science codebase into more production-ready, clean code}
+		\item{Executed several large refactorings, increasing overall maintainability and stability (and cutting maintenance cost)}
+	\end{itemize}
+	% \begin{barchart}{5.5} % The parameter to the barchart environment is the maximum width (in cm) of the longest bar
+	% 	\baritem{Python}{100}
+	% 	\baritem{TypeScript}{60}
+	% 	\baritem{k8s}{80}
+	% 	\baritem{REST API design}{80}
+	% 	\baritem{ETL systems}{80}
+	% 	\baritem{CI/CD}{80}
+	% 	\baritem{Bioinformatics}{60}
+	% 	\baritem{Engineering management}{60}
+	% \end{barchart}
 \end{minipage}
 
 % Output a series of bubbles showing your proficiency with environments and/or tools
